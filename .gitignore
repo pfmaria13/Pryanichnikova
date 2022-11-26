@@ -1,4 +1,4 @@
 # created by virtualenv automatically
-venv/
-*.csv
-.idea/
+/venv
+/.idea
+vacancies.csv
