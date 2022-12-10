@@ -321,7 +321,7 @@ dictionary = {
 
 a = input()
 if a == 'Вакансии' and __name__ == '__main__':
-    print('Введите данные для печати:')
+    print('Данные для печати - ')
     titles, values = csv_readers(input())
     print_vacancies(csv_filter(values, titles), input(), input())
 if a == 'Статистика' and __name__ == '__main__':
