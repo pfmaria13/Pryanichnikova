@@ -56,7 +56,7 @@ class DataSet:
             if vacancy.name.find(self.vacancy_name) != -1:
                 self.augmentation(salary_vacancy, vacancy.year, [vacancy.salary_average])
             self.augmentation(salary_place, vacancy.area_name, [vacancy.salary_average])
-            vacancies_count = vacancies_count + 1
+            vacancies_count += 1
 
         vacancies_number = dict([(key, len(value)) for key, value in salary.items()])
         vacancies_number_by_name = dict([(key, len(value)) for key, value in salary_vacancy.items()])
