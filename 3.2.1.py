@@ -10,4 +10,4 @@ years = list(file["years"].unique())
 ''' По году получает значения из csv файла и записывает их в новый csv файл'''
 for year in years:
     data = file[file["years"] == year]
-    data.iloc[:, :6].to_csv(f"files_years\\{year}.csv", index=False)
+    data.iloc[:, :6].to_csv(f"files_csv\\{year}.csv", index=False)
