@@ -12,8 +12,8 @@
 Задание 3.2.2
 
 Работа программы без многопроцессорной обработки для 3.2.2
-![image](https://user-images.githubusercontent.com/105740928/209822907-16db6428-9d03-40a6-83ec-cb6a35596148.png)
+![image](https://user-images.githubusercontent.com/105740928/209823126-5ecffb12-7377-410d-be47-c78f1e452320.png)
 
 Работы программы с применением мultiprocessing для 3.2.2
-![image](https://user-images.githubusercontent.com/105740928/209823009-70b00065-f71c-46cc-889c-c7eeed8cd8a6.png)
+![image](https://user-images.githubusercontent.com/105740928/209823171-3f99bd90-d271-4fa7-a398-ddd95c63d86d.png)
 
