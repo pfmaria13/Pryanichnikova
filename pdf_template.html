@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>report.pdf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="font-family: 'Lora', sans-serif; padding: 0 15px;">
+    <h1 style="text-align: center">Аналитика по зарплатам и городам для профессии {{ name }}</h1>
+
+    <h2 style="text-align: center">Статистика по годам</h2>
+    <table style="width: 100%; border-collapse: collapse">
+        <thead>
+            <tr>
+                <th>Год</th>
+                <th>Средняя зарплата</th>
+                <th>Средняя зарплата - {{ name }}</th>
+                <th>Количество вакансий</th>
+                <th>Количество вакансий - {{ name }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for values in dynamics %}
+                <tr>
+                    <td>{{ values[0] }}</td>
+                    <td>{{ values[1] }}</td>
+                    <td>{{ values[2] }}</td>
+                    <td>{{ values[3] }}</td>
+                    <td>{{ values[4] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+</body>
+</html>
